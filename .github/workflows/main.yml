@@ -7,13 +7,16 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Hello world action step
-      id: hello
-      uses: ./
-      with:
-        who-to-greet: 'Mudit The Developer'
-    # Use the output from the `hello` step
-    - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }}"
+#     - name: Checkout
+#       uses: actions/checkout@v2
+#     - name: Hello world action step
+#       id: hello
+#       uses: ./
+#       with:
+#         who-to-greet: 'Mudit The Developer'
+#     # Use the output from the `hello` step
+#     - name: Get the output time
+#       run: echo "The time was ${{ steps.hello.outputs.time }}"
+    - name: Gen commands
+      run: |
+        curl -l google.co.in
