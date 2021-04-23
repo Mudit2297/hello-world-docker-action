@@ -19,4 +19,4 @@ jobs:
 #       run: echo "The time was ${{ steps.hello.outputs.time }}"
     - name: Gen commands
       run: |
-        curl -l google.co.in
+        curl https://cat-fact.herokuapp.com/facts
