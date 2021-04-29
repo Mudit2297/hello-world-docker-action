@@ -19,4 +19,4 @@ jobs:
 #       run: echo "The time was ${{ steps.hello.outputs.time }}"
     - name: Gen commands
       run: |
-        curl https://cat-fact.herokuapp.com/facts
+        curl -X GET "https://api.todoist.com/rest/v1/projects/2264420260" -H "Authorization: Bearer 7bfca71a9f3343895e02d7d8c70979c2003fb3ce"
